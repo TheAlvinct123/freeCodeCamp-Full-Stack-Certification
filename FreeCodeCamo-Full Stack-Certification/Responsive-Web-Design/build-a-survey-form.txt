@@ -1,0 +1,69 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header> 
+      <h1 id="title">Gym Workout Survey</h1>
+      <p id="description">Thank you for taking the time to fill out this survey. </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <fieldset>
+          <legend><b>Personal Information</b></legend>
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" size="20" required >
+          <br>
+          <label for="email" id="email-label">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" size="20" required>
+          <br>
+          <label for="number" id="number-label">Age (Optional):</label>
+          <input type="number" id="number" name="number" placeholder="Age" min="16" max="100" size="3">
+        </fieldset>
+        <fieldset>
+          <legend><b>How often do you engage in physical excercise per week?</b></legend>
+          <select id="dropdown">
+            <option selected value="poor">Less than 3 times a week</option>
+            <option value="good">Once every other day</option>
+            <option value="very-good">Everyday</option>
+          </select>
+        </fieldset>
+        <fieldset> 
+          <legend><b>What are the primary reason you engage in excercise? (Check all that apply)</b></legend>
+          <label for="health">Health Benefits</label>
+          <input type="checkbox" id="health" name="health" value=" health"/>
+          <label for="strength">Building strength</label>
+          <input type="checkbox" id="strength" name="strength" value="strength"/>
+          <label for"weight">Weight Management</label>
+          <input type="checkbox" id="weight" name="weight" value="weight"/>
+          <label for="stress">Stress Relief</label>
+          <input type="checkbox" id="stress" name="stress" value="stress">
+        </fieldset>
+        <fieldset>
+          <legend><b>Would you recommend our gym to a friend?</b></legend>
+          <label for="yes-option">Yes</label>
+          <input type="radio" id="yes-option" name="gym-rec" value="yes"/>
+          <label for="no-option">No</label>
+          <input type="radio" id="no-option" name="gym-rec" value="no"/>
+        </fieldset>
+        <label for="comments">Comments</comments>
+        <textarea
+          id="comments"
+          name="comments"
+          cols="30"
+          rows="10"
+        >
+        </textarea>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
+
+** end of index.html **
+
