@@ -1,0 +1,32 @@
+** start of index.html **
+
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Movie Review</title>
+ </head>
+
+<body>
+    <main>
+        <h1>Movie Review: Interstellar</h1>
+        <img src="https://th.bing.com/th/id/R.0e117005bd334d4f305f4ce25c6d95dc?rik=XoXHR1j4PEpbfg&pid=ImgRaw&r=0" alt="movie-cover" width="400" height="500">
+        <p>Interstellar is a visually striking and emotionally charged sci-fi epic about humanity’s survival on a dying Earth. As environmental collapse looms, a team of astronauts travels through a mysterious wormhole to find a new planet for humankind. With stunning visuals, Hans Zimmer’s haunting score, and powerful performances—especially from Matthew McConaughey—the film blends high-concept physics with deeply personal themes of love, sacrifice, and time. Its layered narrative may challenge some viewers, but its ambition and heart make it a standout in modern science fiction.</p>
+        <p><strong>Movie Rating:</strong> <span aria-hidden="true">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆</span> (9.2/10)</p>
+    <h2>Cast Members</h2>
+    <ul>
+        <li>
+<strong>Matthew McConaughey</strong> as Joseph "Coop" Cooper</li>
+        <li><strong>Anne Hathaway</strong> as Dr. Amelia Brand</li>
+        <li>
+<strong>Jessica Chastain</strong> as Murphy "Murph" Cooper</li>
+        <li><strong>John Lithgow</strong> as Donald</li>
+    </ul>
+    </main>
+</body>
+
+</html>
+
+** end of index.html **
+
