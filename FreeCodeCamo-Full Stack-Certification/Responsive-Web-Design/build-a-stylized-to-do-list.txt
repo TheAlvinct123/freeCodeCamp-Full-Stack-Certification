@@ -1,0 +1,126 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>My To-Do List</h1>
+    <ul class="todo-list">
+        <!-- List Item 1 -->
+        <li>
+            <input type="checkbox" id="grad-school">
+            <label for="grad-school">Research Grad School Programs</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://cse.umn.edu/cs/graduate" target="_blank">Grad Programs</a>
+                </li>
+            </ul>
+        </li>
+        
+        <!-- List Item 2 -->
+        <li>
+            <input type="checkbox" id="job-app">
+            <label for="job-app">Apply for Jobs</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://app.joinhandshake.com/explore" target="_blank">Job Board</a>
+                </li>
+            </ul>        
+        </li>
+
+        <!-- List Item 3 -->
+        <li>
+            <input type="checkbox" id="paint-job">
+            <label for="paint-job">Apply New Car Paint</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://www.amazon.com/Dupli-Color-AGM0398-General-Exact-Match-Touch-Up/dp/B00HE68LWC/ref=asc_df_B00HE673C6?tag=bingshoppinga-20&linkCode=df0&hvadid=80608060968611&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=108903&hvtargid=pla-4584207589290820&th=1" target="_blank">Car Paint</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- List Item 4 -->
+        <li>
+            <input type="checkbox" id="code-skill">
+            <label for="code-skill">Practice Coding</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://www.freecodecamp.org/learn/full-stack-developer/" target="_blank">Full Stack Coding Practice</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+   background-color:  white
+}
+
+h1{
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+
+input{
+  padding-left: 20px;
+}
+
+.todo-list li {
+  width: 80%;
+  margin: 0 auto 20px;
+  padding: 20px;
+  background-color: lightskyblue;
+  border-radius: 10px;
+}
+
+.sub-item {
+  padding-left: px;
+  margin-top: 10px;
+  list-style: disc;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sub-item-link {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:active {
+  color: green
+}
+
+a:focus {
+  outline: 2px solid yellow;
+}
+
+a:visited {
+  color: orange
+}
+
+** end of styles.css **
+
