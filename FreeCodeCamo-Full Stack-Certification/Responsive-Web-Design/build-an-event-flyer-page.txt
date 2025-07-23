@@ -1,0 +1,108 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <title>Build an Event Flyer Page</title>
+</head>
+
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Twitchcon_logo.svg/440px-Twitchcon_logo.svg.png?20200906040450" alt="Twitch Logo">
+    <h1>TwitchCon 2025</h1>
+    <p>The 10-year party is on. Come celebrate with us in San Diego!</p>
+    <p><b>When:</b> October 17–19, 2025 <b>Where:</b>San Diego Convention Center</p>
+    <hr>
+  </header>
+  <main>
+    <section class="featured-streamers">
+      <h2>Featured Streamers</h2>
+      <ul>
+        <li>/Emiru</li>
+        <li>/fanfan</li>
+        <li>/Cinna</li>
+      </ul>
+    </section>
+    <section class="events-and-activities">
+      <h2>Events & Activities</h2>
+      <ul>
+        <li>Twitch Rivals Arena</li>
+        <li>Meet & Greets</li>
+        <li>Games Done Quick Express</li>
+      </ul>
+    </section>
+    <section class="fan-favorites">
+      <h2>Fan Favorites</h2>
+      <ul>
+        <li>Creator Camp</li>
+        <li>Community Meetups</li>
+        <li>Glitch Theater</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <hr>
+    <p>&copy; 2025 TwitchCon</p>
+  </footer>
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+  background-color: #E6E6FA;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 300px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+}
+
+hr {
+  width: 90%;
+}
+
+main {
+  display: flex;
+  justify-content: space-around; 
+}
+
+section {
+  width: 25%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: lavenderblush;
+}
+
+** end of styles.css **
+
