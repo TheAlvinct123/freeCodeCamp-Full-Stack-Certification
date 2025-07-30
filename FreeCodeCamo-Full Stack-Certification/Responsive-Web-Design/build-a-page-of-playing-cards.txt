@@ -1,0 +1,187 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <title>Playing Cards</title>
+
+</head>
+
+<body>
+  <main id="playing-cards">
+    <!-- Card one --->
+    <div class="card">
+      <div class="left"> 
+        <span class="black-rank">A</span>
+        <span class="black-suit">♠</span>
+      </div>
+      <div class="middle"> 
+        <span class="black-suit">♠</span>
+      </div>
+      <div class="right"> 
+        <span class="black-suit">♠</span>
+        <span class="black-rank">A</span>
+      </div>
+    </div>
+
+    <!-- Card two --->
+    <div class="card">
+      <div class="left"> 
+        <span class="black-rank">2</span>
+        <span class="black-suit">♣</span>
+      </div>
+      <div class="middle"> 
+        <span class="black-suit">♣</span>
+        <span class="black-suit-reverse">♣</span>
+      </div>
+      <div class="right"> 
+        <span class="black-suit">♣</span>
+        <span class="black-rank">2</span>
+      </div>
+    </div>
+
+    <!-- Card three --->
+    <div class="card">
+      <div class="left"> 
+        <span class="red-rank">3</span>
+        <span class="red-suit">♥</span>
+      </div>
+      <div class="middle"> 
+        <span class="red-suit">♥</span>
+        <span class="red-suit">♥</span>
+        <span class="red-suit-reverse">♥</span>
+      </div>
+      <div class="right"> 
+        <span class="red-suit">♥</span>
+        <span class="red-rank">3</span>
+      </div>
+    </div>
+
+    <!-- Card four --->
+    <div class="card">
+      <div class="left"> 
+        <span class="black-rank">4</span>
+        <span class="black-suit">♣</span>
+      </div>
+      <div class="middle"> 
+        <span class="black-suit">♣♣</span>
+        <span class="black-suit-reverse">♣♣</span>
+      </div>
+      <div class="right"> 
+        <span class="black-suit">♣</span>
+        <span class="black-rank">4</span>
+      </div>
+    </div>
+
+    <!-- Card five --->
+    <div class="card">
+      <div class="left"> 
+        <span class="red-rank">5</span>
+        <span class="red-suit">♦</span>
+      </div>
+      <div class="middle"> 
+        <span class="red-suit">♦♦</span>
+        <span class="red-suit">♦</span>
+        <span class="red-suit">♦♦</span>
+      </div>
+      <div class="right"> 
+        <span class="red-suit">♦</span>
+        <span class="red-rank">5</span>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body{
+  background-color: teal;
+}
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: 
+space-between;
+  width: 250px;
+  height: 350px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 10px 0 0 10px;
+  font-size: 30px;
+}
+
+.middle {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  font-size: 80px;
+}
+
+.middle span{
+  align-self: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  padding: 0 10px 10px 0;
+  font-size: 30px;
+}
+
+.right span {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.black-suit {
+  color: black;
+}
+.black-rank {
+  color: black;
+}
+
+.black-suit-reverse {
+  display: inline-block;
+  transform: rotate(180deg);
+  color: black;
+}
+
+.red-suit {
+  color: red;
+}
+.red-rank {
+  color: red;
+}
+
+.red-suit-reverse {
+  display: inline-block;
+  transform: rotate(180deg);
+  color: red;
+}
+
+** end of styles.css **
+
