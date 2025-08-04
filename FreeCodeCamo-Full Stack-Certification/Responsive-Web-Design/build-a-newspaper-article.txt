@@ -1,0 +1,88 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Article</title>
+    <link href="styles.css" rel="stylesheets">
+  </head>
+  <body>
+    <div class="newspaper">
+      <h1 class="name">The Tactical Times</h1>
+      <p class="date">July 8, 2025</p>
+      <h2 class="headline">Jett Aces 1v5 in Finals Clutch</h2>
+      <h3 class="sub-headline">Solo sweep turns shaky round into instant classic.</h3>
+      <h4 class="author">By Alvin Tan</h4>
+      <p class="text">In one of the most breathtaking plays of the tournament, Jett defied the odds in a high-pressure 1v5 situation during the championship finals. With the enemy team closing in and her squad wiped, she relied on razor-sharp reflexes and perfectly timed abilities to slice through opponents like a whirlwind. The crowd roared as each elimination built toward an improbable ace, turning what looked like a guaranteed loss into a dramatic round win.</p>
+      <p class="text">The clutch sent shockwaves through the esports world, instantly trending across social media and fueling highlight reels for days. Analysts hailed the play as a defining moment for both Jett and the aggressive duelist meta, proving that nerves of steel and flawless mechanics can flip even the direst of scenarios. Some fans even dubbed it “the clutch heard ’round the world.”</p>
+    </div>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 24px;
+}
+
+.newspaper {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 20px auto;
+  padding: 20px;
+  width: 800px;
+  height: 700px;
+  box-shadow: 0px 0px 10px gray; 
+}
+
+.name {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 800;
+  font-family: 'Times New Roman', serif;
+}
+
+.name,
+.author {
+  text-transform: uppercase;
+}
+
+.date {
+  text-align: center;
+}
+
+.headline {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.sub-headline {
+  font-weight: 100;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.text {
+  text-indent: 20px;
+  line-height:2em;
+}
+
+.text::first-letter {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+** end of styles.css **
+
