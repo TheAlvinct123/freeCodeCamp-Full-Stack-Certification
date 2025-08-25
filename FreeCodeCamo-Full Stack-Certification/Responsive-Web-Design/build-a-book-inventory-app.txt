@@ -1,0 +1,158 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Inventory</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Book Inventory</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Status</th>
+        <th>Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="read">
+        <td>Atomic Habits</td>
+        <td>James Clear</td>
+        <td>Self-help</td>
+        <td><span class="status">Read</span></td>
+        <td><span class="rate one"><span></span><span></span><span></span></span></td>
+      </tr>
+      <tr class="to-read">
+        <td>Clean Code</td>
+        <td>Robert C. Martin</td>
+        <td>Programming</td>
+        <td><span class="status">To Read</span></td>
+        <td><span class="rate"><span></span><span></span><span></span></span></td>
+      </tr>
+      <tr class="in-progress">
+        <td>Deep Work</td>
+        <td>Cal Newport</td>
+        <td>Productivity</td>
+        <td><span class="status">In Progress</span></td>
+        <td><span class="rate"><span></span><span></span><span></span></span></td>
+      </tr>
+      <tr class="read">
+        <td>The Pragmatic Programmer</td>
+        <td>Andy Hunt</td>
+        <td>Software Engineering</td>
+        <td><span class="status">Read</span></td>
+        <td><span class="rate three"><span></span><span></span><span></span></span></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  background-color: #d1d1d1;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  border-collapse: collapse;
+}
+
+thead tr th {
+  background-color: lightblue;
+  text-align: left;
+  padding: 5px;
+}
+
+td {
+  padding: 5px;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(#cdeb8b, #91e842);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(#fefcea, #f1da36);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(#f3c5bd, #ea2803);
+}
+
+span {
+  display: inline-block;
+}
+
+span[class="status"], span[class^="rate"] {
+  height: auto;
+  min-height: 1.5em;
+  width: 8em;           
+  padding: 2px 8px;
+  line-height: normal;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.9em;
+  box-sizing: border-box;
+}
+
+tr[class="read"] span[class="status"] {
+  border: 2px solid black;
+  background-image: linear-gradient(#cdeb8e, #a5c956);
+  border-radius: 10px;
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 2px solid black;
+  background-image: linear-gradient(#ffd65e, #febf04);
+  border-radius: 10px;
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 2px solid black;
+  background-image: linear-gradient(#febbbb, #fe9090);
+  border-radius: 10px;
+}
+
+span[class^="rate"] > span {
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+span[class~="one"] span:nth-child(1) {
+  background-image: linear-gradient(white, blue);
+}
+
+span[class~="two"] span:nth-child(1),
+span[class~="two"] span:nth-child(2) {
+  background-image: linear-gradient(white, blue);
+}
+
+span[class~="three"] > span {
+  background-image: linear-gradient(white, blue);
+}
+
+
+** end of styles.css **
+
