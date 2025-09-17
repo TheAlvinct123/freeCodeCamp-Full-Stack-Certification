@@ -249,6 +249,7 @@ statement_last; }</code>
   </body>
 </html>
 
+
 ** end of index.html **
 
 ** start of styles.css **
@@ -313,17 +314,21 @@ code {
 
 @media (max-width: 768px) {
   body {
-    margin-left: 0;
+    margin-left: 260px; 
     padding: 15px;
     font-size: 15px;
   }
 
   #navbar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    box-shadow: none;
+    position: fixed;       
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 15px;
+    background-color: #f4f4f4;
+    z-index: 1000;
   }
 
   #navbar header {
@@ -350,7 +355,6 @@ code {
     margin-bottom: 20px;
   }
 }
-
 
 ** end of styles.css **
 
