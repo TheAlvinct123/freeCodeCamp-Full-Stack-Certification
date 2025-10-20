@@ -1,6 +1,6 @@
-# freeCodeCamp Full Stack Certification Projects
+# FreeCodeCamp Full Stack Certification Projects
 
-This repository contains all of my projects and labs for the [freeCodeCamp Full Stack Certification](https://www.freecodecamp.org/). These projects cover a variety of web development concepts including:
+This repository contains all of my projects and labs for the [FreeCodeCamp Full Stack Certification](https://www.freecodecamp.org/). These projects cover a variety of web development concepts including:
 
 - Responsive Web Design
 - JavaScript Algorithms and Data Structures
