@@ -1,0 +1,132 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Selection Feature Page</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Feature Selection</h1>
+    <div class="feature-card-container"> 
+        <label class="feature-card">
+            <input type="checkbox">
+            <h2>Cloud Storage</h2>
+            <p>100 Gigabyte secure storage</p>
+        </label>
+
+        <label class="feature-card">
+            <input type="checkbox">
+            <h2>Dedicated Support</h2>
+            <p>24/7 customer help</p>
+        </label>
+        
+        <label class="feature-card">
+            <input type="checkbox">
+            <h2>Advanced Analytics</h2>
+            <p>Insights & reports</p>
+        </label>
+
+        <label class="feature-card">
+            <input type="checkbox">
+            <h2>Custom User Themes</h2>
+            <p>Personalized dashboard design</p>
+        </label>
+
+        <label class="feature-card">
+            <input type="checkbox">
+            <h2>Multi-User Collab</h2>
+            <p>Team access and sharing</p>
+        </label>
+
+        <label class="feature-card">
+            <input type="checkbox">
+            <h2>API Access</h2>
+            <p>Integrate with your custom built tools</p>
+        </label>
+
+    </div>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* file: styles.css */
+body {
+  background-color: #f4f4f4;
+  height: 100vh;
+  width: 100vw;
+  margin: 100px auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.feature-card-container {
+  min-width: 700px;
+  max-width: 700px;
+  width: 80%;
+  margin: auto;
+}
+
+.feature-card {
+  display: inline-block;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  margin: 15px;
+  height: 150px;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  border-color: blue;
+  transition: all 0.3s;
+}
+
+.feature-card input[type="checkbox"] {
+  appearance: none;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-left: 250px;
+}
+
+.feature-card input[type="checkbox"]:checked {
+  background-color: #4db8ff;
+  border-color: #007acc;
+}
+
+.feature-card input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1rem;
+}
+
+** end of styles.css **
+
