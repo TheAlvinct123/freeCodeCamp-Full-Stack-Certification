@@ -1,0 +1,266 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Landing Page</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+<body>
+  <header id="header">
+    <div id="logo">
+      <img id="header-img" src="https://img.icons8.com/?size=100&id=10333&format=png&color=000000" alt="Keyboard-Icon">
+      <span>CustomKeys</span>
+    </div>
+  <nav id="nav-bar">
+    <ul>
+      <li><a class="nav-link" href="#email">Home</a></li>
+      <li><a class="nav-link" href="#features">Features</a></li>
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#pricing">Pricing</a></li>
+    </ul>
+  </nav>
+</header>
+<form id="form" action="https://www.freecodecamp.org/email-submit">
+  <h1>Customized to Perfection</h1>
+  <input type="email" id="email" name="email" placeholder="Enter your email address">
+  <input type="submit" id="submit" value="Get Started"/>
+</form>
+<section id="features">
+  <h2>Premium Materials</h2>
+  <p>Our keyboards are built with aircraft‑grade aluminum cases and durable PBT keycaps for longevity and a premium feel.</p>
+  <h2>Fast Assembly & Shipping</h2>
+  <p>Once your custom build is complete, we ship it quickly and securely, with free returns if you’re not satisfied.</h2>
+  <h2>Quality Assurance</h2>
+  <p>Every keyboard is hand‑tested for switch consistency, stabilizer tuning, and flawless functionality before it reaches you.</h2>
+</section>
+<section id="about">
+  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/nNBvLH5-z7s?autoplay=0&mute=1" allowfullscreen>
+  </iframe>
+</section>
+<section id="pricing">
+  <div>
+    <h3>Basic Build</h3>
+    <h2>$300</h2>
+    <ul>
+      <li>Pre-selected components (switches, keycaps, case)</li>
+      <li>Limited customization (color themes, layouts like TKL or 60%)</li>
+      <li>Lower price point to attract entry-level buyers</li>
+    </ul>
+    <input type="button" value="Select">
+  </div>
+  <div>
+    <h3>Advanced Custom</h3>
+    <h2>$600</h2>
+    <ul>
+     <li>Full choice of switches, stabilizers, keycaps, and case materials</li>
+      <li>Optional add-ons (lubing, foam mods, artisan keycaps)</li>
+      <li>Mid-range price for enthusiasts who want personalization without going fully bespoke</li>
+    </ul>
+    <input type="button" value="Select">
+  </div>
+  <div>
+    <h3>Premium Bespoke</h3>
+    <h2>$1000</h2>
+    <ul>
+      <li>Complete design freedom (engraving, exotic materials, hand-assembled builds)</li>
+      <li>Exclusive support (consultation, lifetime service, priority shipping)</li>
+      <li>High-end pricing for collectors and serious hobbyists</li>
+      </ul>
+      <input type="button" value="Select">
+  </div>
+  
+</section>  
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  font-family: sans-serif; 
+  margin: 0;
+  padding: 0;
+  background: #EDEDED;
+}
+
+#header-img {
+  width: 40px;
+  margin: 5px;
+  padding-bottom: 10px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  padding: 10px;
+  background: #ABABAB;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#header-img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+#nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-bar ul li {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+#nav-bar ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#nav-bar ul li a:hover {
+  background-color: #EDEDED;
+}
+
+#form{
+    display: block;
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+
+}
+
+#features h2{
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+#features p{
+  margin: 0;
+  padding: 0
+}
+
+#about iframe {
+    display: block;
+    margin: 20px auto;
+    border: none;
+}
+
+#pricing {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#pricing div {
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  border: 2px solid black;
+  height: 400px;
+  width: 300px;
+}
+
+#pricing div ul{
+  list-style: none;         
+  padding: 0;               
+  margin: 0;                 
+  text-align: center; 
+}
+
+#pricing div h3{
+  background:#ABABAB;
+  margin: 0px;
+  padding: 15px;
+}
+
+#pricing div li {
+  list-style-type: none;
+  font-size: 18px;
+  margin: 15px;
+}
+
+#pricing div {
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  border: 2px solid black;
+  height: 400px;
+  width: 300px;
+}
+
+#pricing div input {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background: yellow;
+}
+
+/* Mobile & Tablet Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Header */
+  #header {
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-bar ul li {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  /* Form */
+  #form {
+    width: 90%; /* shrink form width for smaller screens */
+  }
+
+  /* Pricing Section */
+  #pricing {
+    flex-direction: column; /* stack pricing boxes vertically */
+    align-items: center;
+  }
+
+  #pricing div {
+    width: 90%; /* make boxes fit smaller screens */
+    height: auto; /* let height adjust naturally */
+  }
+
+  #pricing div input {
+    position: static; /* remove absolute positioning */
+    margin: 20px auto; /* center button naturally */
+    display: block;
+  }
+}
+
+
+** end of styles.css **
+
